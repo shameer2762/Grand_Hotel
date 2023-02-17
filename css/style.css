@@ -29,7 +29,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  z-index: 1;
+  z-index: 2;
 }
 .menu-icon {
   margin-top: 3rem;
@@ -91,6 +91,7 @@ body {
   justify-content: space-between;
   align-items: center;
   transition: left 0.8s cubic-bezier(1, 0, 0, 1);
+  z-index: 1;
 }
 .navigation-heading {
   font-family: "Josefin Sans", sans-serif;
@@ -247,7 +248,7 @@ body {
 .banner-paragraph {
   font-size: 2.5rem;
   font-weight: 300;
-  animation: anim 1.5s 0.5s backwards;
+  animation: anim 1.5s backwards;
 }
 .banner-button {
   width: 15rem;
@@ -526,7 +527,7 @@ body {
 }
 .main-part {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   background-color: #100e10ee;
   padding: 4rem;
 }
@@ -569,8 +570,10 @@ body {
   background-color: #b85d1c;
   color: #ddd;
   border: none;
+  /* margin-top: 1rem; */
 }
 .gallery {
+  padding-top: 1rem;
   max-width: 45rem;
 }
 .img-wrapper {
@@ -615,4 +618,135 @@ body {
 .creator span {
   color: gold;
 }
-/* end of footer  */ ;
+/* end of footer  */
+
+@media (max-width: 1050px) {
+  .customer-card-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .customer-card {
+    margin-bottom: 3rem;
+  }
+  .main-part {
+    flex-direction: column;
+  }
+  .footer-list {
+    display: flex;
+    flex-direction: row;
+  }
+  .footer-list-item {
+    margin-right: 3rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .about-us {
+    flex-direction: column;
+    padding-bottom: 20rem;
+  }
+  .about-us-content {
+    margin-bottom: 10rem;
+  }
+  .image {
+    width: 20rem;
+    z-index: 0;
+  }
+  .gallery {
+    padding-top: 1rem;
+  }
+  .creator-part {
+    flex-direction: column;
+  }
+  .copyright {
+    order: 1;
+  }
+}
+
+@media (max-width: 550px) {
+  .banner-heading {
+    font-size: 3.2rem;
+  }
+
+  .banner-paragraph {
+    font-size: 1.5rem;
+  }
+  .banner-button {
+    width: 12rem;
+
+    font-size: 1rem;
+  }
+  .footer-list {
+    display: flex;
+    flex-direction: column;
+  }
+  .gallery {
+    padding-top: 1rem;
+  }
+  .common-heading {
+    font-size: 2.5rem;
+  }
+  .customer-paragraph {
+    font-size: 1.5rem;
+    width: 65%;
+  }
+  .customer-card {
+    flex-direction: column;
+    width: 20rem;
+  }
+  .customer-img {
+    width: 20rem;
+    margin-left: 0rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .navigation {
+    width: 25rem;
+  }
+  .navigation-search-input {
+    width: 18rem;
+  }
+  .navigation-heading {
+    font-size: 2.5rem;
+  }
+  .banner-heading {
+    font-size: 2rem;
+  }
+  .banner-paragraph {
+    font-size: 1.2rem;
+  }
+  .banner-button {
+    width: 10rem;
+    font-size: 1rem;
+  }
+  .about-us-heading {
+    font-size: 2.2rem;
+  }
+  .sub-heading {
+    font-size: 1.8rem;
+  }
+  .about-us-paragraph {
+    font-size: 1rem;
+  }
+  .image {
+    width: 14rem;
+    z-index: 0;
+  }
+  .common-heading {
+    font-size: 1.8rem;
+  }
+  .customer-paragraph {
+    font-size: 1.15rem;
+  }
+  .hotel-heading {
+    font-size: 2rem;
+  }
+  .footer-input {
+    width: 15rem;
+    padding: 0.5rem;
+    font-size: 1.4rem;
+  }
+}
