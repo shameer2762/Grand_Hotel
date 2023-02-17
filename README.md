@@ -18,6 +18,10 @@ The website includes the following features:
 ## Getting Started
 To view the website, simply open the index.html file in your web browser.
 
+(or)
+
+Just click on this URL : https://2762.000webhostapp.com/Grand_Hotel/index.html
+
 
 ## Acknowledgments
 This project was created as a part of a coding challenge. Special thanks to the challenge creators for providing the inspiration for this project.
